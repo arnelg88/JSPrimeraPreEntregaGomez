@@ -45,36 +45,36 @@ if (i>1){
     }
     switch (articuloSeleccionado){
         case "1":
-            cantidad = parseInt(prompt("El precio del Notebook Dell 7420 es de: " + valorArticulo1 + " + IVA" + "\n\nIngrese la cantidad de que desea comprar"));
+            cantidad = parseInt(prompt("El precio del Notebook Dell 7420 es de: " + valorArticulo1 + " + IVA" + "\n\nIngrese la cantidad que desea comprar"));
             while (cantidad == null || /\D/.test(cantidad) || cantidad == "") {
-                cantidad = parseInt(prompt("Opción incorrecta, ingrese un número VÁLIDO! \n\nRECORDATORIO: Solo se aceptan números. \n\n   El precio del Notebook Dell 7420 es de: " + valorArticulo1 + " + IVA" + "\n\nIngrese la cantidad de que desea comprar"));
+                cantidad = parseInt(prompt("Opción incorrecta, ingrese un número VÁLIDO! \n\nRECORDATORIO: Solo se aceptan números. \n\n   El precio del Notebook Dell 7420 es de: " + valorArticulo1 + " + IVA" + "\n\nIngrese la cantidad que desea comprar"));
             };
             precioTotal = ((cantidad * valorArticulo1)*iva);
             formaPago();
             break;
         
         case "2":
-            cantidad = parseInt(prompt("El precio del Smartphone Samsung Galaxy S22+ es de: " + valorArticulo2 + " + IVA" + "\n\nIngrese la cantidad de que desea comprar"));
+            cantidad = parseInt(prompt("El precio del Smartphone Samsung Galaxy S22+ es de: " + valorArticulo2 + " + IVA" + "\n\nIngrese la cantidad que desea comprar"));
             while (cantidad == null || /\D/.test(cantidad) || cantidad == "") {
-                cantidad = parseInt(prompt("Opción incorrecta, ingrese un número VÁLIDO! \n\nRECORDATORIO: Solo se aceptan números. \n\n   El precio del Smartphone Samsung Galaxy S22+ es de: " + valorArticulo2 + " + IVA" + "\n\nIngrese la cantidad de que desea comprar"));
+                cantidad = parseInt(prompt("Opción incorrecta, ingrese un número VÁLIDO! \n\nRECORDATORIO: Solo se aceptan números. \n\n   El precio del Smartphone Samsung Galaxy S22+ es de: " + valorArticulo2 + " + IVA" + "\n\nIngrese la cantidad que desea comprar"));
             };
             precioTotal = ((cantidad * valorArticulo2)*iva);
             formaPago();
             break;
                 
         case "3":
-            cantidad = parseInt(prompt("El precio del Tablet Lenovo K10 es de: " + valorArticulo3 + " + IVA" + "\n\nIngrese la cantidad de que desea comprar"));
+            cantidad = parseInt(prompt("El precio del Tablet Lenovo K10 es de: " + valorArticulo3 + " + IVA" + "\n\nIngrese la cantidad que desea comprar"));
             while (cantidad == null || /\D/.test(cantidad) || cantidad == "") {
-                cantidad = parseInt(prompt("Opción incorrecta, ingrese un número VÁLIDO! \n\nRECORDATORIO: Solo se aceptan números. \n\n   El precio del Tablet Lenovo K10 es de: " + valorArticulo3 + " + IVA" + "\n\nIngrese la cantidad de que desea comprar"));
+                cantidad = parseInt(prompt("Opción incorrecta, ingrese un número VÁLIDO! \n\nRECORDATORIO: Solo se aceptan números. \n\n   El precio del Tablet Lenovo K10 es de: " + valorArticulo3 + " + IVA" + "\n\nIngrese la cantidad que desea comprar"));
             };
             precioTotal = ((cantidad * valorArticulo3)*iva);
             formaPago();
             break;
     
         case "4":
-            cantidad = parseInt(prompt("El precio del Smartwatch Xiomi Mi Watch es de: " + valorArticulo4 + " + IVA" + "\n\nIngrese la cantidad de que desea comprar"));
+            cantidad = parseInt(prompt("El precio del Smartwatch Xiomi Mi Watch es de: " + valorArticulo4 + " + IVA" + "\n\nIngrese la cantidad que desea comprar"));
             while (cantidad == null || /\D/.test(cantidad) || cantidad == "") {
-                cantidad = parseInt(prompt("Opción incorrecta, ingrese un número VÁLIDO! \n\nRECORDATORIO: Solo se aceptan números. \n\n   El precio del Smartwatch Xiomi Mi Watch es de: " + valorArticulo4 + " + IVA" + "\n\nIngrese la cantidad de que desea comprar"));
+                cantidad = parseInt(prompt("Opción incorrecta, ingrese un número VÁLIDO! \n\nRECORDATORIO: Solo se aceptan números. \n\n   El precio del Smartwatch Xiomi Mi Watch es de: " + valorArticulo4 + " + IVA" + "\n\nIngrese la cantidad que desea comprar"));
             };
             precioTotal = ((cantidad * valorArticulo4)*iva);
             formaPago();
