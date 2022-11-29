@@ -93,14 +93,14 @@ if (i>1){
         }
         
         if (formaPago === "1"){
-            alert("El precio final del articulo seleccionado es de: "+ (precioTotal*descuento).toFixed(2) + " con IVA incluido \n\nMuchas gracias por tu compra");
+            alert("El precio final de su compra es de: "+ (precioTotal*descuento).toFixed(2) + " con IVA incluido \n\nMuchas gracias por tu compra");
 
         }else if(formaPago === "2"){
             let cuotas = parseInt(prompt("En cuantas cuotas desea pagar su compra: \n\n3 cuotas\n6 cuotas\n12 cuotas"));
             console.log;
 
             while(cuotas !== 6 &&  cuotas !== 3 && cuotas !== 12){
-                cuotas = parseInt(prompt("Opción incorrecta, ingrese un número VÁLIDO! \n\nRECORDATORIO: Las opciones correctas son: 3 - 6 - 12 \n\n   En cuantas cuotas desea pagar su compra: \n\n 3 cuotas\n 6 cuotas\n 12 cuotas"));
+                cuotas = parseInt(prompt("Opción incorrecta, ingrese un número VÁLIDO! \n\nRECORDATORIO: Las opciones correctas son: 3 - 6 - 12 \n\nEn cuantas cuotas desea pagar su compra: \n\n 3 cuotas\n 6 cuotas\n 12 cuotas"));
                 console.log(cuotas);
             }
             calculoCuota(cuotas);           
