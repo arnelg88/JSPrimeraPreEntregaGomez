@@ -1,9 +1,7 @@
 
-
 const usuarioRegistrado = "coderuser";
 const nombreUsuario = "Coder House";
 const passwordRegistrado = 1234;
-
 
 let usuarioIngresado = prompt("Bienvenido a TuTienda.com \n\n   Ingresa tu nombre de usuario para acceder");
 const usuarioUpper = usuarioIngresado.toUpperCase();
@@ -33,9 +31,7 @@ if (i>1){
     const descuento = 0.90;
     let precioTotal = 0;
     let cantidad = 0;
-    let cuotas = 0; 
-
-    /* let articuloSeleccionado; */
+    
 
     let articuloSeleccionado = prompt("Que te gustaria comprar el día de hoy: \n\n1) Notebook Dell 7420 \n2) Smartphone Samsung Galaxy S22+ \n3) Tablet Lenovo K10 \n4) Smartwatch Xiomi Mi Watch 2 \n\nElige una opción (1 al 4)");
     console.log(articuloSeleccionado);
@@ -100,16 +96,14 @@ if (i>1){
             alert("El precio final del articulo seleccionado es de: "+ (precioTotal*descuento).toFixed(2) + " con IVA incluido \n\nMuchas gracias por tu compra");
 
         }else if(formaPago === "2"){
-            let cuotas = prompt("En cuantas cuotas desea pagar su compra: \n\n1) 3 cuotas\n2) 6 cuotas\n3) 12 cuotas");
-            
-            while(cuotas >3 ||cuotas == null || /\D/.test(cuotas) || cuotas == ""){
-                cuotas = prompt("Opción incorrecta, ingrese un número VÁLIDO! \n\nRECORDATORIO: Las opciones correctas son: 1 - 2 - 3 \n\n   En cuantas cuotas desea pagar su compra: \n\n1) 3 cuotas\n2) 6 cuotas\n3) 12 cuotas");
+            let cuotas = parseInt(prompt("En cuantas cuotas desea pagar su compra: \n\n3 cuotas\n6 cuotas\n12 cuotas"));
+            console.log;
+
+            while(cuotas !== 6 &&  cuotas !== 3 && cuotas !== 12){
+                cuotas = parseInt(prompt("Opción incorrecta, ingrese un número VÁLIDO! \n\nRECORDATORIO: Las opciones correctas son: 3 - 6 - 12 \n\n   En cuantas cuotas desea pagar su compra: \n\n 3 cuotas\n 6 cuotas\n 12 cuotas"));
                 console.log(cuotas);
             }
-            
             calculoCuota(cuotas);           
-            
-            
 
         }
     }
